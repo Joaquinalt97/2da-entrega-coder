@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    ;
+}
+
+/*--------------- header --------------*/
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 100;
+    color: green;
+    text-align: center;
+    background-color: black;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+/*--------------- main --------------*/
+.hero {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+    background-image: url(../image/fondo/nackground\(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    flex-direction: column;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.destacados {
+    border: solid 5px black;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     /*grid-template-rows: 150px 150px 150px; */
+    grid-auto-rows: 700px;
+    gap: 10px;
+}
+
+.destacados div {
+    border: solid 3px green;
+    background-color: black;
+    font-size: 30px;
+    padding: px;
+    text-align: center;
+}
+
+.destacados div{
+    position: relative;
+}
+
+.destacados h3{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.destacados img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wp img {
+    width: 75px;
+    height: 75px;
+}
+
+.wp {
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+}
+
+
+
+
+
+/*--------------- footer --------------*/
+
+@media screen and (max-width:480px) {
+
+}
