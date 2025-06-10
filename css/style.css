@@ -12,6 +12,14 @@ body {
 }
 
 /*--------------- header --------------*/
+.container-fluid {
+    font-size: 20px;
+}
+
+.ayuda {
+    font-size: 25px;
+}
+
 section p {
     font-size: 30px;
     text-align: center;
@@ -23,7 +31,7 @@ section p {
 
 header {
     background-color: white;
-    position:sticky;
+    position: sticky;
     top: 0;
     z-index: 1;
 }
@@ -50,7 +58,7 @@ header nav ul li :hover {
 }
 
 /*--------------- main --------------*/
-.carrusel img{
+.carrusel img {
     background-color: black;
     width: 100%;
     height: 800px;
@@ -68,7 +76,7 @@ h2 {
     margin: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-     /*grid-template-rows: 150px 150px 150px; */
+    /*grid-template-rows: 150px 150px 150px; */
     grid-auto-rows: 500px;
     gap: 5px;
 }
@@ -92,11 +100,11 @@ h2 {
     font-size: 30px;
 }
 
-.destacados h3{
-margin: 10px;
+.destacados h3 {
+    margin: 10px;
 }
 
-.destacados div a{
+.destacados div a {
     color: white;
     background-color: black;
     padding: 5px;
@@ -142,8 +150,108 @@ footer section {
 .mediosdepago img {
     margin: 10px;
 }
-.redes img{
+
+.redes img {
     margin: 30px;
     padding: 5px;
-    position: 1fr 1fr 1fr;
+}
+
+/* MEDIA QUARY*/
+@media (max-width: 980px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .destacados {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 350px;
+    }
+
+    .destacados div {
+        width: 90%;
+        height: 250px;
+        font-size: 18px;
+    }
+
+    .destacados div img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2,
+    footer h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    footer section {
+        grid-template-columns: 1fr;
+        display: block;
+        text-align: center;
+    }
+
+    .mediosdepago,
+    .ubicacion,
+    .redessociales {
+        margin-bottom: 20px;
+    }
+
+    footer div img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 0;
+    }
+    .destacados {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 180px;
+    }
+    .destacados div {
+        width: 98%;
+        height: 120px;
+        font-size: 12px;
+        margin: 5px auto;
+    }
+    .destacados div img {
+        width: 60px;
+        height: 60px;
+    }
+    h2, footer h2 {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .wp img {
+        width: 40px;
+        height: 40px;
+    }
+    footer section {
+        grid-template-columns: 1fr;
+        display: block;
+        text-align: center;
+    }
+    .mediosdepago, .ubicacion, .redessociales {
+        margin-bottom: 10px;
+    }
+    footer div img {
+        width: 40px;
+    }
+    iframe {
+        width: 90vw !important;
+        height: 150px !important;
+    }
 }

@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css"><!--css-->
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../css/style.css"> <!--css-->
+    <title>Taurus Shine</title> <!-- titulo de pestaña-->
 </head>
 
 <body>
@@ -22,27 +25,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./productos-destacados.html">destacados</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="./pages/categorias.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 categorias
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="https://google.com" target="_blank">lavado</a></li>
+                                <li><a class="dropdown-item" href="https://google.com" target="_blank">accesorios</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="https://google.com" target="_blank">maquinas</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html" target="_blank">Contacto</a>
                         </li>
                         </li>
                     </ul>
@@ -55,19 +56,20 @@
         </nav>
     </header>
     <main>
-        <h2>Nosotros</h2>
-        <p>importante: Taurus Shine es una empresa ficticia creada para fines de aprendizaje y no representa una entidad
+        <section class="hero"> <!--hero seccion-->
+            <p>importante: Taurus Shine es una empresa ficticia creada para fines de aprendizaje y no representa una entidad
             real. Cualquier similitud con empresas reales es pura coincidencia.
             Taurus Shine es una empresa dedicada a la venta de productos de limpieza y cuidado vehicular. Nuestra misión
             es ofrecer productos de alta calidad que faciliten las tareas y brinden resultados excepcionales. Nos
             comprometemos a utilizar ingredientes seguros y efectivos, garantizando la satisfacción de nuestros
             clientes.</p>
     </main>
-    <footer>
-        <div class="wp">
-            <a href="http://whatsapp.com"><img src="./image/contacto/whatsapp_logo_icon_147205.png" alt=""></a>
-        </div>
-        <footer> <!--pie de pagina-->
+    <div class="wp">
+        <a href="http://whatsapp.com" target="_blank"><img src="../image/contacto/whatsapp_logo_icon_147205.png"
+                alt=""></a>
+    </div>
+    <footer class="footer"> <!--pie de pagina-->
+        <section>
             <div class="ubicacion">
                 <h2>Ubicacion</h2>
                 <iframe
@@ -77,22 +79,26 @@
             </div>
             <div class="mediosdepago">
                 <h2>Medios de pago</h2>
-                <img src="./image/medios de pago/1490135017-visa_82256.png" alt="">
-                <img src="./image/medios de pago/mastercard_old_payment_method_card_icon_142735.png" alt="">
-                <img src="./image/medios de pago/mercado-pago-logo-0.png" alt="">
-                <img src="./image/medios de pago/pay_cash_payment_money_dollar_bill_icon_143267.png" alt="">
-                <img src="./image/medios de pago/bank_transfer_icon_137913.png" alt="">
+                <img src="../image/medios de pago/1490135017-visa_82256.png" alt="">
+                <img src="../image/medios de pago/mastercard_old_payment_method_card_icon_142735.png" alt="">
+                <img src="../image/medios de pago/mercado-pago-logo-0.png" alt="">
+                <img src="../image/medios de pago/pay_cash_payment_money_dollar_bill_icon_143267.png" alt="">
+                <img src="../image/medios de pago/bank_transfer_icon_137913.png" alt="">
             </div>
-            <div class="redessociales">
+            <div class="redes">
                 <h2>Redes Sociales</h2>
-                <a href="http://instagram.com" target="_blank"><img
-                        src="./image/redes sociales/1491579602-yumminkysocialmedia36_83067.png" alt="instagram"
-                        title="enlace a instagram">instagram</a>
-                <a href="http://facebook.com"><img src="./image/redes sociales/facebook_logo_icon_147291.png"
-                        alt="facebook" title="enlace a facebook">facebook</a>
+                <a href="http://instagram.com" target="_blank"><img src="../image/redes sociales/instagram.svg"
+                        alt="instagram" title="enlace a instagram"></a>
+                <a href="http://facebook.com" target="_blank"><img src="../image/redes sociales/facebook.svg"
+                        alt="facebook" title="enlace a facebook"></a>
+                <a href="http://x.com" target="_blank"><img src="../image/redes sociales/twitter-x.svg" alt="facebook"
+                        title="enlace a x"></a>
             </div>
-            <p>© Since 2025 ©</p>
-        </footer>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script> <!--script-->
 </body>
 
 </html>
