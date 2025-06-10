@@ -115,26 +115,35 @@ margin: 10px;
 .wp {
     position: fixed;
     right: 25px;
-    bottom: 20px;
+    bottom: 25px;
 }
 
 
 /*--------------- footer --------------*/
-.footer {
-    flex-direction: column;
-    flex-wrap: wrap;
+
+footer h2 {
     text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    padding: 10px;
 }
 
-.footer{
-    border: solid 5px black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 100%;
-}
-
-.footer div img {
+footer div img {
     width: 100px;
-    height: 100px;
-    text-align: center;
+    align-items: center;
+}
+
+footer section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mediosdepago img {
+    margin: 10px;
+}
+.redes img{
+    margin: 30px;
+    padding: 5px;
+    position: 1fr 1fr 1fr;
 }
