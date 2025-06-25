@@ -1,0 +1,98 @@
+@media (max-width: 980px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .destacados {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 350px;
+    }
+
+    .destacados div {
+        width: 90%;
+        height: 250px;
+        font-size: 18px;
+    }
+
+    .destacados div img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2,
+    footer h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    footer section {
+        grid-template-columns: 1fr;
+        display: block;
+        text-align: center;
+    }
+
+    .mediosdepago,
+    .ubicacion,
+    .redessociales {
+        margin-bottom: 20px;
+    }
+
+    footer div img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px 0;
+    }
+    .destacados {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 180px;
+    }
+    .destacados div {
+        width: 98%;
+        height: 120px;
+        font-size: 12px;
+        margin: 5px auto;
+    }
+    .destacados div img {
+        width: 60px;
+        height: 60px;
+    }
+    h2, footer h2 {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .wp img {
+        width: 40px;
+        height: 40px;
+    }
+    footer section {
+        grid-template-columns: 1fr;
+        display: block;
+        text-align: center;
+    }
+    .mediosdepago, .ubicacion, .redessociales {
+        margin-bottom: 10px;
+    }
+    footer div img {
+        width: 40px;
+    }
+    iframe {
+        width: 90vw !important;
+        height: 150px !important;
+    }
+}
