@@ -12,22 +12,6 @@ body {
 }
 
 /*--------------- header --------------*/
-.container-fluid {
-    font-size: 20px;
-}
-
-.ayuda {
-    font-size: 25px;
-}
-
-section p {
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    background-color: black;
-    padding: 20px;
-    margin: 0;
-}
 
 header {
     background-color: white;
@@ -44,20 +28,24 @@ header h1 {
     background-color: black;
 }
 
-header nav ul {
-    list-style: none;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    padding: 20px;
-    transition: 0.5s;
-}
-
-header nav ul li :hover {
+header nav div ul li :hover {
     background-color: green;
 }
 
+.container-fluid {
+    font-size: 20px;
+}
+
 /*--------------- main --------------*/
+.hero p {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 0;
+}
+
 .carrusel img {
     background-color: black;
     width: 100%;
